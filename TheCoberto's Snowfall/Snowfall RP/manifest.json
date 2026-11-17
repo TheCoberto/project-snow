@@ -1,0 +1,21 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Snowfall [1.1.0]",
+    "description": "Turns your world into a winter wonderland! Use Snowfall Thaw when the season's over.",
+    "uuid": "1d8d4f7a-7145-47c7-937c-c0b40aded4e0",
+    "version": [ 1, 1, 0 ],
+    "min_engine_version": [ 1, 26, 50 ]
+  },
+  "modules": [
+    {
+      "description": "Resources",
+      "version": [ 1, 1, 0 ],
+      "uuid": "cf2b06c0-9a0b-4a62-b5f5-27080e764bbc",
+      "type": "resources"
+    }
+  ],
+  "metadata": {
+    "authors": [ "TheCoberto" ]
+  }
+}
