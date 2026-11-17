@@ -2,5 +2,6 @@
 .vs/
 
 # Packaged builds
+dist/
 *.mcpack
 *.mcaddon
