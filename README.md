@@ -56,16 +56,10 @@ powershell -ExecutionPolicy Bypass -File tools\update-biomes.ps1
 
 Run it again after each Minecraft update so the overrides keep matching vanilla.
 
-When you release, bump the version in each pack's `manifest.json`: the pack name, `header.version`, the module version and Snowfall BP's dependency on the RP. Then build the release files:
+When you release, bump the version in each pack's `manifest.json`: the pack name, `header.version`, the module version and Snowfall BP's dependency on the RP. Then build the release files with `package.ps1` from the shared [bedrock-tools](https://github.com/TheCoberto/bedrock-tools) repo, cloned next to this one:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File tools\package.ps1
+powershell -ExecutionPolicy Bypass -File ..\bedrock-tools\package.ps1
 ```
 
-That writes `dist\Snowfall-<version>.mcaddon` with all three packs. Importing it doesn't turn anything on; players still choose per world. Add `-PerPack` to also get a separate `.mcpack` for each pack, such as Thaw on its own. Double-click a file to import it into Minecraft. The `dist` folder is ignored by Git.
-
-The script works on any add-on repo. It finds the packs and reads the name and version from the behavior pack's manifest:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File tools\package.ps1 -Repo ..\stronger-skeletons -OutDir ..\builds
-```
+That writes `dist\Snowfall-<version>.mcaddon` with all three packs. Importing it doesn't turn anything on; players still choose per world. Add `-PerPack` to also get a separate `.mcpack` for each pack, such as Thaw on its own. The `dist` folder is ignored by Git.
