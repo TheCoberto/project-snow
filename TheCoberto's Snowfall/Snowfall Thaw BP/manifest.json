@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Snowfall Thaw [1.0.0]",
+    "description": "Melts the snow and ice Snowfall left behind. Turn Snowfall off first, then use this until spring arrives!",
+    "uuid": "784cda37-55c7-46a4-be6b-93dd36d17b19",
+    "version": [ 1, 0, 0 ],
+    "min_engine_version": [ 1, 26, 50 ]
+  },
+  "modules": [
+    {
+      "description": "Thaw script",
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "e479dc67-9bb7-47b5-b80e-9553ab8cdf55",
+      "version": [ 1, 0, 0 ]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.7.0"
+    }
+  ],
+  "metadata": {
+    "authors": [ "TheCoberto" ]
+  }
+}

@@ -1,0 +1,6 @@
+# Visual Studio workspace state
+.vs/
+
+# Packaged builds
+*.mcpack
+*.mcaddon
